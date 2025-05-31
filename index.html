@@ -15,6 +15,11 @@
             padding: 20px;
         }
 
+        .verde {
+            background-color: #90EE90 ;
+            color: #006400;
+        }
+
         div {
             background-color: white;
             margin: 0 auto;
@@ -65,7 +70,7 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class = "body">
         <h1>Nhatalia Sampaio</h1>
         <p>Só sei que nada sei</p>
         <h2>Hobbies</h2>
@@ -81,8 +86,14 @@
             <a href="https://github.com/NhataliaCarolliny">Visite meu GitHub</a>
         </p>
         <p>
-            <button>Mudar Tema</button>
+            <button onclick = "alterarTema()">Mudar Tema</button>
         </p>
     </div>
+    <script>
+        function alterarTema() {
+            let tema = document.querySelector(".body");
+            tema.classList.toggle("verde");
+        }
+    </script>
 </body>
 </html>
